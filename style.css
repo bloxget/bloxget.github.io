@@ -6,7 +6,9 @@
 .medium{font-weight:500}
 .semibold{font-weight:600}
 
-body, p, h1, h2, h3 {font-family: 'Inter', sans-serif; color:#ffffff}h1 {font-weight: 900; font-size: 125px;}h2 {font-weight: 800; /* Semi-bold */font-size: 2rem; /* Adjust size as needed */}h3 {font-weight: 700; /* Normal */font-size: 1.5rem; /* Adjust size as needed */}p, body {font-weight: 400; /* Regular */font-size: 1rem; /* Adjust size as needed */}
+body, p, h1, h2, h3 {font-family: 'Inter', sans-serif; color:white;}h1 {font-weight: 900; font-size: 125px;}h2 {font-weight: 800; /* Semi-bold */font-size: 2rem; /* Adjust size as needed */}h3 {font-weight: 700; /* Normal */font-size: 1.5rem; /* Adjust size as needed */}p, body {font-weight: 400; /* Regular */font-size: 1rem; /* Adjust size as needed */}
+a {text-decoration: none !important;} a:hover{text-decoration: underline !important;}
+footer {background-color: #111b24 !important;}
 /* ^ Fonts ^ */
 body {
     background-color: hex(#000000);
