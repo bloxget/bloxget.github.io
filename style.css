@@ -1,1 +1,60 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.thin{font-weight:100}
+.extralight{font-weight:200}
+.light{font-weight:300}
+.medium{font-weight:500}
+.semibold{font-weight:600}
 
+body, p, h1, h2, h3 {font-family: 'Inter', sans-serif; color:#ffffff}h1 {font-weight: 900; font-size: 125px;}h2 {font-weight: 800; /* Semi-bold */font-size: 2rem; /* Adjust size as needed */}h3 {font-weight: 700; /* Normal */font-size: 1.5rem; /* Adjust size as needed */}p, body {font-weight: 400; /* Regular */font-size: 1rem; /* Adjust size as needed */}
+/* ^ Fonts ^ */
+body {
+    background-color: hex(#000000);
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image horizontally and vertically */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+/* Main */
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity for the blur effect */
+    backdrop-filter: blur(10px); /* Adds the blur effect */
+    z-index: 1000; /* Ensure it's above other content */
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.logo {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    background-image: url('./images/Untitled178_20240519094353.png'); /* Replace with your logo path */
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+}
+
+.menu a:hover {
+    color: #555;
+}
