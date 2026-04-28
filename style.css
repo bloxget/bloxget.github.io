@@ -13,7 +13,7 @@ body {
 }
 
 a {
-    color: #b388ff;
+    color: #b388ff !important;
     font-weight: 600;
     text-decoration: none;
 }
