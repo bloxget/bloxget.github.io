@@ -13,8 +13,12 @@ body {
 }
 
 a {
-    font-weight: bold;
-    color: #663475 !important;
+    color: #b388ff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
     text-decoration: underline;
 }
 
