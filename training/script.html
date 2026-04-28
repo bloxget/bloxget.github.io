@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Script | BloxGet</title>
+
+    <link rel="icon" type="image/x-icon" href="../images/BloxGet Icon - Background, white.png">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .section {
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+
+        .script-box {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 14px;
+            padding: 18px;
+            margin-bottom: 14px;
+            position: relative;
+        }
+
+        .script-title {
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 1.05rem;
+        }
+
+        .script-text {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            opacity: 0.9;
+            white-space: pre-wrap;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            background: rgba(179,136,255,0.15);
+            border: 1px solid rgba(179,136,255,0.35);
+            color: #b388ff;
+            padding: 6px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: 0.2s;
+        }
+
+        .copy-btn:hover {
+            background: rgba(179,136,255,0.25);
+        }
+
+        .note {
+            margin-top: 30px;
+            padding: 18px;
+            border-radius: 14px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.06);
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div style="display: flex; align-items: center;">
+            <div class="logo"></div>
+            <div class="title">BloxGet</div>
+        </div>
+
+        <nav class="menu">
+            <a href="../">Home</a>
+            <a href="./">Trainer Script</a>
+            <a href="https://www.roblox.com/groups/33973371">Group</a>
+            <a href="https://www.discord.com/HFzX4hGQa9">Discord</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <section class="hero-content container">
+
+            <h1>Training Script</h1>
+
+            <p class="subtitle">
+                Copy and use these commands during training sessions. everything is formatted for quick access and smooth moderation.
+            </p>
+
+            <div class="section">
+
+                <h2>start of training</h2>
+
+                <div class="script-box">
+                    <div class="script-title">greeting message</div>
+                    <button class="copy-btn" onclick="copyText(this)">copy</button>
+                    <div class="script-text">welcome to bloxget training session
+please line up on the purple lines and wait for instructions from staff</div>
+                </div>
+
+                <div class="script-box">
+                    <div class="script-title">session rules</div>
+                    <button class="copy-btn" onclick="copyText(this)">copy</button>
+                    <div class="script-text">before we begin, please remember:
+- no trolling
+- no exploiting
+- respect all staff members
+- failure to comply may result in removal</div>
+                </div>
+
+            </div>
+
+            <div class="section">
+
+                <h2>during training</h2>
+
+                <div class="script-box">
+                    <div class="script-title">line up instruction</div>
+                    <button class="copy-btn" onclick="copyText(this)">copy</button>
+                    <div class="script-text">please line up neatly on the purple lines
+do not jump or move out of formation</div>
+                </div>
+
+                <div class="script-box">
+                    <div class="script-title">attention command</div>
+                    <button class="copy-btn" onclick="copyText(this)">copy</button>
+                    <div class="script-text">attention all trainees
+you are now required to listen carefully to all instructions</div>
+                </div>
+
+            </div>
+
+            <div class="section">
+
+                <h2>end of training</h2>
+
+                <div class="script-box">
+                    <div class="script-title">closing message</div>
+                    <button class="copy-btn" onclick="copyText(this)">copy</button>
+                    <div class="script-text">thank you for attending today’s training
+you may now leave the training area</div>
+                </div>
+
+            </div>
+
+            <div class="note">
+                tip: click copy on any script box to instantly copy it to your clipboard. no dragging needed
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="https://www.roblox.com/groups/33973371">Group</a>
+            <a href="https://www.roblox.com/error.html">Game (WIP)</a>
+            <a href="https://www.discord.com/HFzX4hGQa9">Discord</a>
+        </div>
+
+        <p>Copyright 2026 © BloxGet</p>
+    </footer>
+
+    <script>
+        function copyText(btn) {
+            const text = btn.parentElement.querySelector(".script-text").innerText;
+
+            navigator.clipboard.writeText(text).then(() => {
+                btn.innerText = "copied";
+                setTimeout(() => {
+                    btn.innerText = "copy";
+                }, 1200);
+            });
+        }
+    </script>
+
+</body>
+</html>
