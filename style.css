@@ -12,16 +12,6 @@ body {
     color: white;
 }
 
-a {
-    color: #b388ff !important;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 /* topbar */
 
 .topbar {
